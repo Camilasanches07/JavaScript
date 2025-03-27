@@ -1,7 +1,9 @@
-let idade = 12
+let nota = 60
 
-if(idade >= 18){
-    console.log("Pode dirigir")
-} else{
-    console.log("Não pode dirigir")
-}
+if (nota >=70) {
+    console.log("Parabens, você passou !")
+
+    }else{
+        console.log("Você reprovou !")
+
+    }
