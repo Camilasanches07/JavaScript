@@ -1,9 +1,7 @@
-let nota = 60
+let numero = 40 
 
-if (nota >=70) {
-    console.log("Parabens, você passou !")
-
-    }else{
-        console.log("Você reprovou !")
-
-    }
+if (numero %2 == 0) {
+    console.log("O número é par !")
+} else {
+    console.log("O número é ímpar !")   
+}
