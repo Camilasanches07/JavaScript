@@ -1,14 +1,29 @@
-let idade = 79;
+numero = 1;
 
-if (idade <12) {
-    console.log("Você é uma criança")
-    
-} else if (idade >= 12 && idade <=17){
-    console.log("Você é adolescente")
+switch (numero) {
+    case 1:
+        console.log("Hoje é domingo")
+        break;
+    case 2:
+        console.log("Hoje é segunda")
+        break;
+    case 3:
+        console.log("Hoje é terça")
+        break;
+    case 4:
+        console.log("Hoje é quarta")
+        break;
+    case 5:
+        console.log("Hoje é quinta")
+        break;
+    case 6:
+        console.log("Hoje é sexta")
+        break;
+    case 7:
+        console.log("Hoje é sábado")
+        break;
 
-} else if (idade >= 18 && idade <=59){
-    console.log("Você é adulto")
-
-} else if (idade >= 60){
-    console.log("Você é idoso")
+    default:
+        console.log("numéro inválido")
+        break;
 }
