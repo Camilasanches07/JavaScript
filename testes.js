@@ -1,8 +1,8 @@
-let nome ="Caleb"
-let index = nome.length-1
+let numero = 1
 
-while (index >= 0 ) {
-    console.log(nome[index])
-    index --
-    
+while (numero <= 50) {
+    if (numero %5 == 0) {
+        console.log(numero)
+    }
+    numero ++
 }
