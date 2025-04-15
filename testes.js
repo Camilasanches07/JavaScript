@@ -1,8 +1,5 @@
-function parimpar(num){
-    if (num % 2 == 0) {
-        console.log("O número é par!")        
-    }else {
-        console.log("O número é ímpar!")
-    }
+function calculaDesconto(valorProduto, desconto = 10){
+    console.log(valorProduto - (valorProduto / 100))
 }
-parimpar(1)
+
+calculaDesconto(1890)
