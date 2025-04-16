@@ -1,10 +1,17 @@
-//Modify the welcomeToBooleans function so that it returns true instead of false.
+/* Add the equality operator to the indicated line so that the function will return the string Equal when val is equivalent to 12.
 
-/* 1. The welcomeToBooleans() function should return a Boolean (true or false) value.
-2. welcomeToBooleans() should return true. */
+1. testEqual(10) should return the string Not Equal
+2. testEqual(12) should return the string Equal
+3. testEqual("12") should return the string Equal
+4. You should use the == operator */
 
-function welcomeToBooleans() {
-  // Only change code below this line
-  return true; // Change this line
-  // Only change code above this line
+// Setup
+function testEqual(val) {
+  if (val == 12) { 
+    return "Equal";
+  }
+  return "Not Equal";
 }
+
+testEqual(10);
+console.log(testEqual(10))
