@@ -1,30 +1,10 @@
-/*Write a function nextInLine which takes an array (arr) and a number (item) as arguments.
-Add the number to the end of the array, then remove the first element of the array.
-The nextInLine function should then return the element that was removed.*/
+//Modify the welcomeToBooleans function so that it returns true instead of false.
 
-/* 
-1. nextInLine([], 5) should return a number.
-2. nextInLine([], 1) should return 1
-3. nextInLine([2], 1) should return 2
-4. nextInLine([5,6,7,8,9], 1) should return 5
-5. After nextInLine(testArr, 10), testArr[4] should be 10 */
+/* 1. The welcomeToBooleans() function should return a Boolean (true or false) value.
+2. welcomeToBooleans() should return true. */
 
-
-
-function nextInLine(arr, item) {
-    // Only change code below this line
-    
-    arr.push(item)
-
-
-    return arr.shift() ;
-    // Only change code above this line
-  }
-  
-  // Setup
-  let testArr = [1, 2, 3, 4, 5];
-  
-  // Display code
-  console.log("Before: " + JSON.stringify(testArr));
-  console.log(nextInLine(testArr, 6));
-  console.log("After: " + JSON.stringify(testArr));
+function welcomeToBooleans() {
+  // Only change code below this line
+  return true; // Change this line
+  // Only change code above this line
+}
