@@ -1,4 +1,4 @@
-//console.log("Início");
+/* //console.log("Início");
 
 function getUsers() {
     return new Promise((resolve, reject) => {
@@ -23,11 +23,11 @@ function getUsers() {
 
 console.log("ok")*/
 
-function renderizaTabela(arrUsers){
+/*function renderizaTabela(arrUsers){
     console.log(arrUsers)
-}
+}*/
 
-async function getData(){
+/*async function getData(){
     try {
         const result = await getUsers()
         console.log(result)
@@ -35,9 +35,9 @@ async function getData(){
     } catch (error) {
         console.log(error)
     }
-}
+}*/
 
-getData()
+//getData() 
 
 /*setTimeout(() => {
     console.log("Timeout - Executado após 0ms");
@@ -48,3 +48,31 @@ Promise.resolve().then(() => {
 });
 
 console.log("Fim");*/
+
+
+
+
+function fazerPedido() {
+  return new Promise((resolve, reject) => {
+    const success = Math.random() > 0.3; // 70% de chance de sucesso
+
+    setTimeout(() => {
+      if (success) {
+        resolve("🍕 Seu pedido chegou!");
+      } else {
+        reject("❌ O pedido deu errado.");
+      }
+    }, 2000); // espera 2 segundos
+  });
+}
+
+async function verificaPedido() {
+  try {
+    const resultado = await fazerPedido();
+    console.log("✅ Sucesso:", resultado);
+  } catch (erro) {
+    console.log("🚨 Erro:", erro);
+  }
+}
+
+verificaPedido();
