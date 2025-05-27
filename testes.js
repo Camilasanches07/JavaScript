@@ -50,7 +50,7 @@ Promise.resolve().then(() => {
 console.log("Fim");*/
 
 
-function fazerCafe() {
+/*function fazerCafe() {
   return new Promise((resolve, reject) => {
     const temCafe = true;
 
@@ -75,4 +75,32 @@ async function acordar() {
   }
 }
 
-acordar();
+acordar();*/
+
+const produtos = [{
+    name: "Relógio",
+    price:10
+},
+{
+    name:"Short",
+    price:20
+},
+{
+    name:"Vestido",
+    price:55
+},
+{
+    name:"óculos",
+    price:70
+}
+]
+let total = 0
+
+for (let index = 0; index < produtos.length; index++) {
+    const element = produtos[index]
+    total = produtos[index].price + total
+
+}
+
+console.log(total)
+
