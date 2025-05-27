@@ -50,29 +50,29 @@ Promise.resolve().then(() => {
 console.log("Fim");*/
 
 
-
-
-function fazerPedido() {
+function fazerCafe() {
   return new Promise((resolve, reject) => {
-    const success = Math.random() > 0.3; // 70% de chance de sucesso
+    const temCafe = true;
 
     setTimeout(() => {
-      if (success) {
-        resolve("🍕 Seu pedido chegou!");
+      if (temCafe) {
+        resolve("☕ Café pronto!");
       } else {
-        reject("❌ O pedido deu errado.");
+        reject("❌ Sem café hoje.");
       }
-    }, 2000); // espera 2 segundos
+    }, 1000);
   });
 }
 
-async function verificaPedido() {
+async function acordar() {
   try {
-    const resultado = await fazerPedido();
-    console.log("✅ Sucesso:", resultado);
+    const cafe = await fazerCafe();
+    console.log("Bom dia!");
+    console.log(cafe);
   } catch (erro) {
-    console.log("🚨 Erro:", erro);
+    console.log("Acordei mal...");
+    console.log(erro);
   }
 }
 
-verificaPedido();
+acordar();
