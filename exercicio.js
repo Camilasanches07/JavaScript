@@ -1,9 +1,9 @@
-//3. Dado o array [10, 25, 8, 30, 15, 40], use filter para criar um novo array apenas com números maiores que 20.
+//4. Dado o array ['JavaScript', 'Python', 'Java', 'C++', 'Go'], use filter para criar um novo array apenas com linguagens que começam com a letra 'J'.
 
-const numeros = [10, 25, 8, 30, 15, 40]
+const palavras = ['JavaScript', 'Python', 'Java', 'C++', 'Go']
 
-const numerosMaiores = numeros. filter((n) => {
-    return(n > 20)
+const inicia_com_J = palavras.filter((palavra) => {
+    return(palavra[0] === "J")
 })
 
-console.log(numerosMaiores)
+console.log(inicia_com_J)
