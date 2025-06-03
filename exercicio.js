@@ -1,9 +1,9 @@
-//2. Dado o array ['casa', 'carro', 'bicicleta', 'moto'], use filter para criar um novo array apenas com palavras que têm mais de 4 letras.
+//3. Dado o array [10, 25, 8, 30, 15, 40], use filter para criar um novo array apenas com números maiores que 20.
 
-const palavras = ['casa', 'carro', 'bicicleta', 'moto']
+const numeros = [10, 25, 8, 30, 15, 40]
 
-const quartoLetras = palavras.filter((palavra) => {
-    return(palavra.length > 4)
+const numerosMaiores = numeros. filter((n) => {
+    return(n > 20)
 })
 
-console.log(quartoLetras)
+console.log(numerosMaiores)
