@@ -1,9 +1,9 @@
-//4. Dado o array ['JavaScript', 'Python', 'Java', 'C++', 'Go'], use filter para criar um novo array apenas com linguagens que começam com a letra 'J'.
+//5. Dado o array [5, 12, 18, 3, 25, 7, 30], use filter para criar um novo array com números que são divisíveis por 3.
 
-const palavras = ['JavaScript', 'Python', 'Java', 'C++', 'Go']
+const numeros = [5, 12, 18, 3, 25, 7, 30]
 
-const inicia_com_J = palavras.filter((palavra) => {
-    return(palavra[0] === "J")
+const div_por_3 = numeros.filter((num) => {
+    return(num %3 == 0)
 })
 
-console.log(inicia_com_J)
+console.log(div_por_3)
