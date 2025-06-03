@@ -1,7 +1,7 @@
-//2. Dado o array ['João', 'Maria', 'Pedro', 'Ana'], use forEach para imprimir "Olá, [nome]!" para cada pessoa.
+//3. Dado o array [10, 20, 30, 40], use forEach para imprimir o dobro de cada número.
 
-const pessoas =['João', 'Maria', 'Pedro', 'Ana']
+const numeros = [10, 20, 30, 40] 
 
-pessoas.forEach((nomes) => {
-    console.log("Olá,",nomes)
+numeros.forEach((numero) => {
+    console.log(numero * 2)
 })
