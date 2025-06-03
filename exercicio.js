@@ -1,9 +1,9 @@
-//1. Dado o array [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], use filter para criar um novo array apenas com números ímpares.
+//2. Dado o array ['casa', 'carro', 'bicicleta', 'moto'], use filter para criar um novo array apenas com palavras que têm mais de 4 letras.
 
-const numeros =  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const palavras = ['casa', 'carro', 'bicicleta', 'moto']
 
-const numerosImpares = numeros.filter((n) => {
-    return(n % 2)
+const quartoLetras = palavras.filter((palavra) => {
+    return(palavra.length > 4)
 })
 
-console.log(numerosImpares)
+console.log(quartoLetras)
