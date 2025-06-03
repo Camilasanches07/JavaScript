@@ -1,9 +1,10 @@
-//4. Dado o array [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], use forEach para imprimir apenas os números pares.
+//5. Dado o array ['maçã', 'banana', 'laranja'], use forEach para criar um novo array com cada fruta em maiúscula. (Dica: você precisará criar um array vazio antes do forEach)
 
-const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const frutas = ['maçã', 'banana', 'laranja'];
+const novasFrutas = [];
 
-numeros.forEach((n) => {
-    if (n % 2 == 0) {
-        console.log(n, "é par!")
-    }
-})
+frutas.forEach(fruta => {
+  novasFrutas.push(fruta.toUpperCase());
+});
+
+console.log(novasFrutas);
