@@ -1,13 +1,10 @@
-//5. Dado o array ['João', 'Maria', 'Pedro'], use map para criar um novo array onde cada nome vira "Sr. João", "Sra. Maria", "Sr. Pedro".
+//9. Dado o array ['10', '20', '30', '40'] (strings), use map para converter em números e depois dobrar cada valor.
 
-const nomes = ['João', 'Maria', 'Pedro']
+const numeros = ['10', '20', '30', '40']
 
-const novoArray = nomes.map((nome) => {
-    if (nome == "Maria") {
-        return("Sra. " + nome)
-    } else {
-        return("Sr. " + nome)
-    }
+const novosNumeros = numeros.map((n) => {
+    const numeroInt = parseInt(n)
+    return(numeroInt * 2)
 })
 
-console.log(novoArray)
+console.log(novosNumeros)
