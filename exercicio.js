@@ -1,10 +1,9 @@
-//5. Dado o array ['maçã', 'banana', 'laranja'], use forEach para criar um novo array com cada fruta em maiúscula. (Dica: você precisará criar um array vazio antes do forEach)
+//1. Dado o array [1, 2, 3, 4, 5], use map para criar um novo array com cada número multiplicado por 3.
 
-const frutas = ['maçã', 'banana', 'laranja'];
-const novasFrutas = [];
+const numeros = [1, 2, 3, 4, 5]
 
-frutas.forEach(fruta => {
-  novasFrutas.push(fruta.toUpperCase());
-});
+const novoArray = numeros.map((n) =>{
+    return(n * 3)
+})
 
-console.log(novasFrutas);
+console.log(novoArray)
