@@ -1,7 +1,7 @@
-//Exercício 1
+//2. Dado o array ['João', 'Maria', 'Pedro', 'Ana'], use forEach para imprimir "Olá, [nome]!" para cada pessoa.
 
-const numeros = [1, 2, 3, 4, 5];
+const pessoas =['João', 'Maria', 'Pedro', 'Ana']
 
-numeros.forEach((n) => {
-    console.log(n)
+pessoas.forEach((nomes) => {
+    console.log("Olá,",nomes)
 })
