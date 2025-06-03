@@ -1,9 +1,9 @@
-//5. Dado o array [5, 12, 18, 3, 25, 7, 30], use filter para criar um novo array com números que são divisíveis por 3.
+//6. Dado o array ['João', 'Maria', 'Ana', 'Pedro', 'Carla'], use filter para criar um novo array apenas com nomes que têm 4 letras.
 
-const numeros = [5, 12, 18, 3, 25, 7, 30]
+const palavras = ['João', 'Maria', 'Ana', 'Pedro', 'Carla']
 
-const div_por_3 = numeros.filter((num) => {
-    return(num %3 == 0)
+const nomeSelecionado = palavras.filter((pessoa) => {
+    return(pessoa.length == 4)
 })
 
-console.log(div_por_3)
+console.log(nomeSelecionado)
