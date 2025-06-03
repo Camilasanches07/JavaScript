@@ -1,10 +1,9 @@
-//9. Dado o array ['10', '20', '30', '40'] (strings), use map para converter em números e depois dobrar cada valor.
+//1. Dado o array [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], use filter para criar um novo array apenas com números ímpares.
 
-const numeros = ['10', '20', '30', '40']
+const numeros =  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-const novosNumeros = numeros.map((n) => {
-    const numeroInt = parseInt(n)
-    return(numeroInt * 2)
+const numerosImpares = numeros.filter((n) => {
+    return(n % 2)
 })
 
-console.log(novosNumeros)
+console.log(numerosImpares)
