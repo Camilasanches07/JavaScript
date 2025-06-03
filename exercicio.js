@@ -1,9 +1,13 @@
-//1. Dado o array [5, 10, 15, 20], use reduce para calcular a soma de todos os números.
+//Use reduce para calcular o valor total de todos os produtos.
 
-const numeros = [5, 10, 15, 20]
+const produtos = [
+  {nome: 'Notebook', preco: 2000},
+  {nome: 'Mouse', preco: 50},
+  {nome: 'Teclado', preco: 150}
+];
 
-const soma = numeros.reduce((acumulador, numero) => {
-    return(acumulador + numero)
+const valorTotal = produtos.reduce((acc, nome) => {
+    return(acc + nome.preco)
 }, 0)
 
-console.log(soma)
+console.log(valorTotal)
