@@ -1,9 +1,15 @@
-//6. Dado o array ['João', 'Maria', 'Ana', 'Pedro', 'Carla'], use filter para criar um novo array apenas com nomes que têm 4 letras.
+//Use filter para criar um novo array apenas com pessoas maiores de idade (18+).
 
-const palavras = ['João', 'Maria', 'Ana', 'Pedro', 'Carla']
+const pessoas = [
+  {nome: 'Ana', idade: 17},
+  {nome: 'Carlos', idade: 25},
+  {nome: 'Maria', idade: 16},
+  {nome: 'João', idade: 30}
+];
 
-const nomeSelecionado = palavras.filter((pessoa) => {
-    return(pessoa.length == 4)
+
+const maior_de_idade = pessoas.filter((pessoa) => {
+    return pessoa.idade >= 18
 })
 
-console.log(nomeSelecionado)
+console.log(maior_de_idade)
