@@ -1,9 +1,9 @@
-//1. Dado o array [1, 2, 3, 4, 5], use map para criar um novo array com cada número multiplicado por 3.
+//2. Dado o array ['javascript', 'python', 'java'], use map para criar um novo array com cada string em maiúscula.
 
-const numeros = [1, 2, 3, 4, 5]
+const nomes = ['javascript', 'python', 'java']
 
-const novoArray = numeros.map((n) =>{
-    return(n * 3)
+const maiuscula = nomes.map((n) => {
+    return (n.toUpperCase())
 })
 
-console.log(novoArray)
+console.log(maiuscula)
