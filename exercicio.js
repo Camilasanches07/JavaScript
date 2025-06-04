@@ -1,13 +1,24 @@
-//Use reduce para calcular o valor total de todos os produtos.
+/*1. Criando sua primeira Promise
+Crie uma Promise que simula o lançamento de uma moeda. A Promise deve:
+Esperar 1 segundo
+Ter 50% de chance de resolver com "Cara" e 50% de rejeitar com "Coroa"
+Use Math.random() para determinar o resultado*/
 
-const produtos = [
-  {nome: 'Notebook', preco: 2000},
-  {nome: 'Mouse', preco: 50},
-  {nome: 'Teclado', preco: 150}
-];
+const minhaPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    const moeda = Math.random()
+    if (moeda < 0.5) {
+      resolve("Cara")
+    } else {
+      reject("Coroa")
+    }
+  }, 1000)
+})
 
-const valorTotal = produtos.reduce((acc, nome) => {
-    return(acc + nome.preco)
-}, 0)
-
-console.log(valorTotal)
+minhaPromise
+  .then((resultado) => {
+    console.log("Resultado:", resultado)
+  })
+  .catch((erro) => {
+    console.log("Erro: ", erro)
+  })
