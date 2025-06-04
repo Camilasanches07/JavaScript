@@ -18,10 +18,14 @@ function buscarUsuario(id){
   })
 }
 
-buscarUsuario(15)
-  .then((usuario) => {
-    console.log("Usuário Encontrado", usuario )
-  })
-  .catch((error) => {
-    console.log("Erro:", error)
-  })
+async function testarBusca() {
+  try {
+    const usuario = await buscarUsuario(15)
+    console.log("Usuário Encontrado:", usuario)
+
+  } catch (error) {
+    console.log("Erro: ", error)
+  }
+}
+
+testarBusca()
