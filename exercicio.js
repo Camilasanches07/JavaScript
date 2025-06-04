@@ -1,24 +1,32 @@
-/*1. Criando sua primeira Promise
-Crie uma Promise que simula o lançamento de uma moeda. A Promise deve:
-Esperar 1 segundo
-Ter 50% de chance de resolver com "Cara" e 50% de rejeitar com "Coroa"
-Use Math.random() para determinar o resultado*/
-
-const minhaPromise = new Promise((resolve, reject) => {
+//. Convertendo callback para Promise. Transforme esta função que usa callback em uma que retorna Promise:
+/*function lerArquivo(nome, callback) {
   setTimeout(() => {
-    const moeda = Math.random()
-    if (moeda < 0.5) {
-      resolve("Cara")
+    if (nome === "arquivo.txt") {
+      callback(null, "Conteúdo do arquivo");
     } else {
-      reject("Coroa")
+      callback("Arquivo não encontrado", null);
     }
-  }, 1000)
-})
+  }, 500);
+}*/
 
-minhaPromise
-  .then((resultado) => {
-    console.log("Resultado:", resultado)
+
+
+function lerArquivo(nome){
+  return new Promise((resolve, reject) => {
+      setTimeout(() => {
+    if (nome === "arquivo.txt") {
+      resolve("Conteúdo do arquivo");
+    } else {
+      reject("Arquivo não encontrado");
+    }
+  }, 500);
+})
+}
+
+lerArquivo("arquivo.txt")
+  .then((conteudo) => {
+    console.log("Sucesso:", conteudo)
   })
   .catch((erro) => {
-    console.log("Erro: ", erro)
+    console.log("Erro:", erro)
   })
